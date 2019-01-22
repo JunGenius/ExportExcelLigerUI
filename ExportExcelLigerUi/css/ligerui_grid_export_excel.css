@@ -1,0 +1,38 @@
+﻿.l-grid-table {
+    border: solid #A3C0E8;
+    border-width: 1px 1px 1px 1px;
+    margin-left: 10px;
+    clear: both;
+    border-collapse: collapse;
+}
+
+    .l-grid-table tr {
+        height: 35px;
+    }
+
+
+        .l-grid-table tr th {
+            color: #183152;
+            font-weight: bold;
+            width: auto;
+            vertical-align: middle;
+            font-family: "微软雅黑", "宋体", Arial;
+            font-size: 13px;
+            padding-left: 10px;
+            border: solid #A3C0E8;
+            background-color: #D6E3EF;
+            border-width: 0px 1px 1px 0px;
+            height: 25px;
+        }
+
+    .l-grid-table td {
+        border: solid #A3C0E8;
+        border-width: 0px 1px 1px 0px;
+        font-size: 12px;
+        text-align: center;
+        clear: both;
+    }
+
+        .l-grid-table td:first-child {
+            background-color: #D6E3EF;
+        }
