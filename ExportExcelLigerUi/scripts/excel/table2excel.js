@@ -5,7 +5,8 @@
  *  2017/01/10
  */
 //table2excel.js
-; (function ($, window, document, undefined) {
+
+(function ($, window, document, undefined) {
 
 
     var pluginName = "table2excel",
@@ -300,14 +301,14 @@
 
             // 添加css样式
             if (cssStyles.length != 0) {
-                $.ajaxSettings.async = false;
-                css_boby = e.template.css.head;
+                $.ajaxSettings.async = false;              
                 for (var i = 0; i < cssStyles.length; i++) {
                     $.get(rootPath + cssStyles[i], function (result) {
+                        css_boby = e.template.css.head;
                         css_boby += result;
+                        css_boby += e.template.css.tail;
                     });
                 }
-                css_boby += e.template.css.tail;
 
                 $.ajaxSettings.async = true;//设置getJson异步
             }
