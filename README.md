@@ -1,4 +1,7 @@
 # ExportExcelLigerUI
+
+基于JS POI Excel导出 ，支持行列冻结、样式、图片等导出样式..
+
 使用:
 
                $("#").tableExport({
@@ -16,6 +19,8 @@
 
 
 默认属性:
+
+
                $.fn.tableExport.defaults = {
                           title: "", // 标题为空 则不设置标题
                           exclude: ".noExl", // 不是xls格式： 只有加在table tr 或 td 上class 有效  xls格式;任意
